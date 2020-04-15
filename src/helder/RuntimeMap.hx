@@ -16,7 +16,7 @@ class RuntimeMap<K, V> implements IMap<K, V> {
 
   public inline function new() {}
 
-  inline function getMap(k: K): IMap<K, V> {
+  function getMap(k: K): IMap<K, V> {
     if (map != null)
       return map;
     if (Std.is(k, String))
